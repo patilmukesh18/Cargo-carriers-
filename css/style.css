@@ -5008,7 +5008,7 @@ a.close.disabled {
     content: ""; }
 
 .custom-heading {
-      color: var(--red); /* Change to any color of your choice */
+      color: cornsilk; /* Change to any color of your choice */
       font-weight: bold; /* Optional: Make the heading bold */
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow effect */
 }
