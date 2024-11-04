@@ -9908,3 +9908,30 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
+    .vehicle-info {
+      display: flex;
+      align-items: center;
+    }
+    .vehicle-info img {
+      width: 100%;
+      height: auto;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+    .vehicle-details {
+      padding: 20px;
+      max-width: 600px;
+    }
+    .left {
+      flex-direction: row;
+    }
+    .right {
+      flex-direction: row-reverse;
+    }
+    .vehicle-details h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .vehicle-details p {
+      color: #555;
+    }
