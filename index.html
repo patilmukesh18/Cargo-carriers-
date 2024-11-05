@@ -120,9 +120,16 @@
 	              </div>
               </div>
               <div class="form-group">
-                <label for="" class="label">Preferred Vehicle Type</label>
-                <input type="text" class="form-control" placeholder="Vehicle">
-              </div>
+				<label for="vehicle-type" class="label">Preferred Vehicle Type</label>
+				<select id="vehicle-type" class="form-control">
+					<option value="" disabled selected>Select vehicle type</option>
+					<option value="flatbed-trailers">Flatbed Trailers</option>
+					<option value="box-trucks">Box Trucks</option>
+					<option value="prime-movers">Prime Movers</option>
+					<option value="curtain-sided-trailers">Curtain-sided Trailers</option>
+				</select>
+			</div>
+			
 			  <div class="form-group">
                 <label for="" class="label">Contact</label>
                 <input type="text" class="form-control" placeholder="Phone No">
