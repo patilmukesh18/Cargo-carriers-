@@ -3506,6 +3506,7 @@ input[type="button"].btn-block {
   padding-bottom: 0.5rem; }
 
 .navbar-collapse {
+  margin-right: -10%;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   -webkit-box-flex: 1;
@@ -8098,11 +8099,11 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light .navbar-nav {
       padding-bottom: 10px; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 15px;
+    font-size: 20px;
     padding-top: .9rem;
     padding-bottom: .9rem;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 15px;
     color: #fff;
     font-weight: 400;
     opacity: 1 !important; }
