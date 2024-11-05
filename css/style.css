@@ -9935,3 +9935,112 @@ textarea.form-control {
     .vehicle-details p {
       color: #555;
     }
+
+/* Styling for the main section */
+.technology-section .heading-section {
+  margin-bottom: 50px;
+}
+
+.technology-section .content-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.technology-section .image-container,
+.technology-section .text-container {
+  padding: 15px;
+}
+
+.technology-section .image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Zig-zag layout effect */
+.technology-section .content-row:nth-child(odd) .image-container {
+  order: 1;
+}
+.technology-section .content-row:nth-child(odd) .text-container {
+  order: 2;
+}
+.technology-section .content-row:nth-child(even) .image-container {
+  order: 2;
+}
+.technology-section .content-row:nth-child(even) .text-container {
+  order: 1;
+}
+
+/* Fade-in effect */
+.technology-section .content-row.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* General FAQ Section Styling */
+.faq-section {
+  position: relative;
+  padding: 50px 20px;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+.faq-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+  z-index: 1;
+}
+
+.faq-section .heading-section {
+  z-index: 2;
+  color: #fff;
+}
+
+.faq-item {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  width: 100%;
+  background: #fc983c;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 15px;
+  text-align: left;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+  background: #e98b36;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent for better visibility */
+  color: #ffffff;
+  margin-top: 10px;
+  padding: 0 15px;
+  border-left: 4px solid #fc983c;
+  border-radius: 0 0 5px 5px;
+}
+
+.faq-answer p {
+  margin: 15px 0;
+}
