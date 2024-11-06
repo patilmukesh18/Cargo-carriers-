@@ -257,6 +257,23 @@
 	    </div>
     </section> -->
 
+	<div class="card-container">
+		<div class="card-xyz">
+			<h2 style="color: aliceblue;">20 +</h2>
+			<p>Years of Experience</p>
+		</div>
+		<div class="card-xyz">
+			<h2 style="color: aliceblue;">2000 +</h2>
+			<p>Trusted by Clients</p>
+		</div>
+		<div class="card-xyz">
+			<h2 style="color: aliceblue;">High Rated</h2>
+			<p>Services</p>
+		</div>
+	</div>
+
+	
+
     <section class="ftco-section services-section ftco-no-pt ftco-no-pb">
       <div class="container" style="margin-bottom: -3%">
       	<div class="row justify-content-center">
@@ -317,14 +334,14 @@
     <section class="ftco-section">
     	<div class="container-fluid px-4" style="margin-bottom: -5%">
     		<div class="row justify-content-center">
-          <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate mb-5 fade-in-left">
           	<span class="subheading">What we offer</span>
             <h2 class="mb-2">Logistics Carriers</h2>
 			<p>At Gateway Transport Group, we understand that different freight requires specialized equipment. That's why we maintain a diverse fleet of trucks to cater to your specific needs. Our fleet includes</p>
           </div>
         </div>
     		<div class="row">
-    			<div class="col-md-3">
+    			<div class="col-md-3 fade-in-left" style="shad">
     				<div class="car-wrap ftco-animate">
     					<div class="img d-flex align-items-end" style="background-image: url(images/truck_1.jpg);">
     						<!-- <div class="price-wrap d-flex">
@@ -342,7 +359,7 @@
     					</div>
     				</div>
     			</div>
-    			<div class="col-md-3">
+    			<div class="col-md-3 fade-in-left">
     				<div class="car-wrap ftco-animate">
     					<div class="img d-flex align-items-end" style="background-image: url(images/Truck_2.jpg);">
     						<!-- <div class="price-wrap d-flex">
@@ -361,7 +378,7 @@
     					</div>
     				</div>
     			</div>
-    			<div class="col-md-3">
+    			<div class="col-md-3 fade-in-right">
     				<div class="car-wrap ftco-animate">
     					<div class="img d-flex align-items-end" style="background-image: url(images/Truck_3.jpg);">
     						<!-- <div class="price-wrap d-flex">
@@ -379,7 +396,7 @@
     					</div>
     				</div>
     			</div>
-    			<div class="col-md-3">
+    			<div class="col-md-3 fade-in-right">
     				<div class="car-wrap ftco-animate">
     					<div class="img d-flex align-items-end" style="background-image: url(images/Truck_4.jpg);">
     						<!-- <div class="price-wrap d-flex">
@@ -690,6 +707,24 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const fadeElements = document.querySelectorAll('.fade-in-left, .fade-in-right');
+
+    function checkVisibility() {
+        fadeElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top <= window.innerHeight * 0.8) {
+                el.classList.add('fade-in-visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Check visibility on page load
+});
+</script>
     
   </body>
 </html>

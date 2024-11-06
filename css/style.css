@@ -10063,3 +10063,60 @@ textarea.form-control {
 .faq-answer p {
   margin: 15px 0;
 }
+
+/* Container styling */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between the cards */
+  padding: 40px;
+}
+
+/* Card styling */
+.card-xyz {
+  width: 250px;
+  height: auto;
+  background-color: #FC983C;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h2 {
+  font-size: 2em;
+  color: #007BFF;
+  margin: 0;
+}
+
+.card p {
+  font-size: 1.1em;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS for fade-in from left and right animations */
+.fade-in-left,
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(50px); /* Default to slide-in from the right */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.fade-in-left {
+    transform: translateX(-50px); /* Slide-in from the left */
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
