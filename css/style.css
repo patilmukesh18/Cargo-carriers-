@@ -166,6 +166,11 @@ pre {
   margin-bottom: 1rem;
   overflow: auto; }
 
+  .counting-cards{
+    gap: 20px; 
+    margin-left: 130px !important;
+  }
+  
 figure {
   margin: 0 0 1rem; }
 
